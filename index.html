@@ -31,44 +31,159 @@
   <link rel="stylesheet" href="style/responsive.css">
 </head>
 
-<body>
-  <header class="md:container md:max-auto">
+<body class="">
+  <header class="max-w-screen-xl mx-auto">
     <nav>
-      <div class="navbar bg-base-100   h-32 bg-primary rounded-full pr-8 pl-8 mt-12 justify-between mx-10  ">
-        <div class=" flex font-medium text-lg text-white ">
-          <ul class="menu text-lg font-medium menu-horizontal px-4 input-bordered">
-            <li><a>Home</a></li>
-            <li><a>About Us</a></li>
-            <li><a>Shop</a></li>
-            <li><a>All Fruits</a></li>
-          </ul>
+      <div class="navbar text-black md:bg-primary-2  lg:bg-primary lg:text-white rounded-full mt-4 ">
+        <div
+          class="navbar-start flex flex-row-reverse gap-5 md:justify-between md:flex-row lg:justify-between lg:flex-row">
+          <div class="dropdown ">
+            <label tabindex="0" class="btn btn-ghost relative left-48 md:static lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="flex items-center justify-center gap-2  ">
+            <img class="w-8" src="./images/logo.png" alt="">
+            <div class=" gap-1  flex">
+              <h3 class="text-xl font-bold ">Fruit</h3>
+              <h3 class="text-xl font-bold">Burst</h3>
+
+            </div>
+          </div>
         </div>
 
-        <div class=" flex items-center  ">
-          <img src="images/logo.png" alt="">
-          <p class="btn btn-ghost normal-case font-bold text-white text-4xl mr-20  ">Fruit Burst</p>
+
+
+
+        <div class="navbar-end hidden lg:flex md:flex md:ml-8">
+          <a class="">
+            <button class=" btn border-none flex justify-between w-72 mr-4 bg-white rounded-3xl ">
+            
+            <input type="" placeholder="Search here"
+            class="    text-base font-normal md:w-auto" />
+              
+              <img class=" " src="icons/Frame.png" alt="">
+              </button>
+
+            
+          </a>
         </div>
-
-
-
-        <div class=" justify-end mr-30">
-
-          <input type="text" placeholder="Search here"
-            class=" input input-bordered rounded-3xl border-none w-24 p-2 text-base font-normal md:w-auto" />
-          <img class=" p-4 absolute" src="icons/Frame.png" alt="">
-        </div>
-
-        
       </div>
-     
+      </nav>
+      <!--slider-->
+      <banner class="">
+        <div class="carousel w-full my-6 items-center rounded-xl ">
+          <div id="slide1" class="carousel-item relative w-full">
 
+            <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-3 text-3xl lg:text-5xl font-bold text-white">Exotic tastes at your <br>doorstep</h1>
+                  <p class="mb-3">We supply highly quality organic products.</p>
+                  <button class="btn  border-none bg-primary text-xl font-bold text-white">
+                    <p>Shop Now</p>
+                  </button>
+                </div>
+              </div>
+            </div>
 
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle border-none bg-primary-2"><img src="./icons/frame 2.png" alt=""></a>
+              <a href="#slide2" class="btn btn-circle border-none bg-primary-2"><img src="./icons/Frame (1).png" alt=""></a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
 
+            <div class="hero min-h-screen" style="background-image: url(./images/banner2.png);">
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-3 text-3xl lg:text-5xl font-bold text-white">Exotic tastes at your <br>doorstep</h1>
+                  <p class="mb-3">We supply highly quality organic products.</p>
+                  <button class="btn   border-none bg-primary text-xl font-bold text-white">
+                    <p>Shop Now</p>
+                  </button>
+                </div>
+              </div>
+            </div>
 
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle border-none bg-primary-2"><img src="./icons/frame 2.png" alt=""></a>
+              <a href="#slide3" class="btn btn-circle border-none bg-primary-2"><img src="./icons/Frame (1).png" alt=""></a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
 
+            <div class="hero min-h-screen" style="background-image: url(./images/banner3.png);">
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-3 text-3xl lg:text-5xl font-bold text-white">Exotic tastes at your <br>doorstep</h1>
+                  <p class="mb-3">We supply highly quality organic products.</p>
+                  <button class="btn   border-none bg-primary text-xl font-bold text-white">
+                    <p>Shop Now</p>
+                  </button>
+                </div>
+              </div>
+            </div>
 
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle border-none bg-primary-2"><img src="./icons/frame 2.png" alt=""></a>
+              <a href="#slide4" class="btn btn-circle border-none bg-primary-2"><img src="./icons/Frame (1).png" alt=""></a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
 
-    </nav>
+            <div class="hero min-h-screen" style="background-image: url(./images/banner4.png);">
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-3 text-3xl lg:text-5xl font-bold text-white">Exotic tastes at your <br>doorstep</h1>
+                  <p class="mb-3">We supply highly quality organic products.</p>
+                  <button class="btn   border-none bg-primary text-xl font-bold text-white">
+                    <p>Shop Now</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle border-none bg-primary-2"><img src="./icons/frame 2.png" alt=""></a>
+              <a href="#slide1" class="btn btn-circle border-none bg-primary-2"><img src="./icons/Frame (1).png" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+      </banner>
+    
   </header>
 </body>
 
