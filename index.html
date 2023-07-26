@@ -30,11 +30,11 @@
   <link rel="stylesheet" href="style/fruit.css">
   <link rel="stylesheet" href="style/responsive.css">
 </head>
-
+<!--navbar-->
 <body class="">
   <header class="max-w-screen-xl mx-auto">
     <nav>
-      <div class="navbar text-black md:bg-primary-2  lg:bg-primary lg:text-white rounded-full mt-4 ">
+      <div class="navbar text-black md:bg-teal-500  lg:bg-primary lg:text-white rounded-full mt-4 ">
         <div
           class="navbar-start flex flex-row-reverse gap-5 md:justify-between md:flex-row lg:justify-between lg:flex-row">
           <div class="dropdown ">
@@ -89,7 +89,7 @@
             <input type="" placeholder="Search here"
             class="    text-base font-normal md:w-auto" />
               
-              <img class=" " src="icons/Frame.png" alt="">
+              <img class=" " src="./icons/Frame.png" alt="">
               </button>
 
             
@@ -98,7 +98,7 @@
       </div>
       </nav>
       <!--slider-->
-      <banner class="">
+      <banner-section class="">
         <div class="carousel w-full my-6 items-center rounded-xl ">
           <div id="slide1" class="carousel-item relative w-full">
 
@@ -108,7 +108,7 @@
                 <div class="max-w-md">
                   <h1 class="mb-3 text-3xl lg:text-5xl font-bold text-white">Exotic tastes at your <br>doorstep</h1>
                   <p class="mb-3">We supply highly quality organic products.</p>
-                  <button class="btn  border-none bg-primary text-xl font-bold text-white">
+                  <button class="btn   border-none bg-primary text-xl font-bold text-white">
                     <p>Shop Now</p>
                   </button>
                 </div>
@@ -182,9 +182,87 @@
           </div>
         </div>
 
-      </banner>
+      </banner-section>
+<!--extra section part-->
+<section class="x-w-screen-md mx-auto relative -top-24 ml-24 mr-20 invisible lg:visible">
+  <div class="grid grid-cols-3 lg:grid-cols-5 justify-center  items-center  bg-white  shadow-lg  pl-10  py-5 ">
+   
+    <div class="">
+      <img class="w-[70px]" src="./images/fruit1.png" alt="">
+      <p class="">Strawberry</p>
+    </div>
+    <div class="">
+      <img class="w-[70px]" src="./images/fruit2.png" alt="">
+      <p class="">Orange</p>
+
+    </div>
+    <div class="">
+      <img class="w-[70px]" src="./images/fruit3.png" alt="">
+      <p class="">Mango</p>
+    </div>
+    <div class="">
+      <img class="w-[70px]" src="./images/fruit4.png" alt="">
+      <p>Strawberry</p>
+
+    </div>
+    <div class=" ">
+      <img class="w-[60px]" src="./images/fruit5.png" alt="">
+      <p>Mango</p>
+
+    </div>
+   
+  </div>
+</section>
     
   </header>
+<!--main section-->
+
+<main-section class="max-w-screen-xl mx-auto">
+
+  <section>
+    <div class=" flex flex-col px-4 gap-3 lg:flex-row items-center justify-around">
+      <div class="ml-4">
+        <h2 class="text-primary-2 text-5xl font-extrabold">Deal of the day</h2>
+        <p class=" text-primary-2 text-base font-medium lg:w-4/5">Contrary to popular belief, is not simply random text. It has
+          roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      </div>
+      <div class="">
+        <div class="flex gap-5">
+          <div>
+            <span class="countdown text-primary-2 font-extrabold text-5xl">
+              <span style="--value:29;"></span>
+            </span>
+            days
+          </div>
+          <div>
+            <span class="countdown text-primary-2 font-extrabold text-5xl">
+              <span style="--value:15;"></span>
+            </span>
+            hours
+          </div>
+          <div>
+            <span class="countdown text-primary-2 font-extrabold text-5xl">
+              <span style="--value:25;"></span>
+            </span>
+            min
+          </div>
+          <div>
+            <span class="countdown font-extrabold text-5xl">
+              <span style="--value:8;"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</main-section>
+
+
+
+
 </body>
 
 </html>
