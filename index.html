@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="asd.jpg" type="image/x-icon">
-    <title>Fruit Burst Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./asd.jpg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <title>Fruit Burst Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-2': '#121212',
+            'primary': '#F85559',
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="style/fruit.css">
+  <link rel="stylesheet" href="style/responsive.css">
 </head>
+
 <body>
-    
+  <header class="md:container md:max-auto">
+    <nav>
+      <div class="navbar bg-base-100   h-32 bg-primary rounded-full pr-8 pl-8 mt-12 justify-between mx-10  ">
+        <div class=" flex font-medium text-lg text-white ">
+          <ul class="menu text-lg font-medium menu-horizontal px-4 input-bordered">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+
+        <div class=" flex items-center  ">
+          <img src="images/logo.png" alt="">
+          <p class="btn btn-ghost normal-case font-bold text-white text-4xl mr-20  ">Fruit Burst</p>
+        </div>
+
+
+
+        <div class=" justify-end mr-30">
+
+          <input type="text" placeholder="Search here"
+            class=" input input-bordered rounded-3xl border-none w-24 p-2 text-base font-normal md:w-auto" />
+          <img class=" p-4 absolute" src="icons/Frame.png" alt="">
+        </div>
+
+        
+      </div>
+     
+
+
+
+
+
+
+
+    </nav>
+  </header>
 </body>
+
 </html>
